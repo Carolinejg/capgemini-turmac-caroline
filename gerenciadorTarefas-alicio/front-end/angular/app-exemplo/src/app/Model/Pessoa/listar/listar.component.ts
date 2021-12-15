@@ -18,7 +18,9 @@ export class ListarComponent implements OnInit{
     })
   }
 
-  
+  editar(){
+    
+  }
 
   
 

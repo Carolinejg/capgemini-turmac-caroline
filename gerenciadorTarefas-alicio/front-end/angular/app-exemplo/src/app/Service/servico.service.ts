@@ -13,4 +13,10 @@ export class ServicoService {
   getPessoa(){
     return this.http.get<Pessoa[]>(this.urlBase);
   }
+  getPessoaById(id: Number){
+    return this.http.get<Pessoa>(this.urlBase+"/"+id)
+  }
+  updatePessoa(pessoa: Pessoa){
+    return this.http.put<Pessoa>(this.urlBase+"/"+pessoa.id,pessoa);
+  }
 }
